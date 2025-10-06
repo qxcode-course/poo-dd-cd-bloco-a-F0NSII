@@ -20,7 +20,7 @@ class animal:
     def show(self):
         print(f"{self.specie}:{self.age}:{self.sound}")
 
-
+def main():
 def main():
     bixo = animal("", "")
     while True:
