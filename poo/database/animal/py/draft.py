@@ -21,23 +21,22 @@ class animal:
         print(f"{self.specie}:{self.age}:{self.sound}")
 
 def main():
-def main():
     bixo = animal("", "")
     while True:
         line: str = input()
         args: list[str] = line.split(" ")
-        if args[0] == "$init":
+        if args[0] == "init":
             specie = args[1]
             sound = args[2]
             bixo = animal(specie, sound)
-        elif args[0] == "$grow":
+        elif args[0] == "grow":
             amount: int = int(args[1])
             bixo.ageBy(amount)
-        elif args[0] == "$show":
+        elif args[0] == "show":
             bixo.show()
-        elif args[0] == "$end":
+        elif args[0] == "end":
             break
-        elif args[0] == "$noise":
+        elif args[0] == "noise":
             bixo.makeNoise()
 
 main()
